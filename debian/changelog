@@ -1,8 +1,9 @@
-open-vcdiff (0.8.4-1.1) unstable; urgency=low
+open-vcdiff (0.8.4-1.2) unstable; urgency=low
 
   * Changed source format to quilt.
+  * Added patch with diffs to original tar.gz
 
- -- Bolesław Tokarski <boleslaw.tokarski@opera.com>  Thu, 23 Oct 2014 11:31:25 +0100
+ -- Bolesław Tokarski <boleslaw.tokarski@opera.com>  Thu, 23 Oct 2014 11:42:25 +0100
 
 open-vcdiff (0.8.4-1) unstable; urgency=low
 
