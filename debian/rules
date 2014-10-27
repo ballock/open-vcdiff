@@ -112,7 +112,7 @@ binary-arch: build install
 #	dh_python
 	dh_makeshlibs -V
 	dh_installdeb
-	dh_shlibdeps -ldebian/libvcdcom0/usr/lib:debian/libvcddec0/usr/lib:debian/libvcdenc0/usr/lib
+	dh_shlibdeps
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
