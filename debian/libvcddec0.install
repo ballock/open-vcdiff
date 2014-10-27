@@ -1,1 +1,1 @@
-usr/lib/libvcddec.so.*
+usr/lib/*/libvcddec.so.*
