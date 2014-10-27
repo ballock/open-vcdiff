@@ -2,12 +2,14 @@ Source: open-vcdiff
 Priority: optional
 Maintainer: Google Inc. <opensource@google.com>
 Build-Depends: debhelper (>= 7.0.0), autotools-dev
-Standards-Version: 3.8.4
+Standards-Version: 3.9.4
 Section: libs
 
 Package: libvcdcom0
 Section: libs
 Architecture: any
+Multi-Arch: same
+Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: open-vcdiff common library
  This library includes common modules needed by the open-vcdiff package.
@@ -16,6 +18,8 @@ Description: open-vcdiff common library
 Package: libvcddec0
 Section: libs
 Architecture: any
+Multi-Arch: same
+Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: open-vcdiff decoder library
  This library is part of the open-vcdiff package and provides a decoder for the
@@ -25,6 +29,8 @@ Description: open-vcdiff decoder library
 Package: libvcdenc0
 Section: libs
 Architecture: any
+Multi-Arch: same
+Pre-Depends: multiarch-support
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: open-vcdiff encoder library
  This library is part of the open-vcdiff package and provides an encoder for the
@@ -34,6 +40,7 @@ Description: open-vcdiff encoder library
 Package: libvcdcom-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: libvcdcom0 (= ${binary:Version}), ${misc:Depends}
 Description: Development files for open-vcdiff common library
  This library is needed to compile code that calls open-vcdiff, an encoder and
@@ -43,6 +50,7 @@ Description: Development files for open-vcdiff common library
 Package: libvcddec-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: libvcddec0 (= ${binary:Version}), libvcdcom-dev (= ${binary:Version}),
          ${misc:Depends}
 Description: Development files for open-vcdiff decoder library
@@ -53,6 +61,7 @@ Description: Development files for open-vcdiff decoder library
 Package: libvcdenc-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: same
 Depends: libvcdenc0 (= ${binary:Version}), libvcdcom-dev (= ${binary:Version}),
          ${misc:Depends}
 Description: Development files for open-vcdiff encoder library
